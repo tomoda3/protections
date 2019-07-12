@@ -1,0 +1,310 @@
+* {
+  box-sizing:
+  border-box;
+  }
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+  }
+
+a {
+  text-decoration: none;
+
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  }
+
+.under {
+  text-decoration: underline;
+}
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(img/neko1.jpg);
+  background-size: cover;
+  background-position:center;
+  color: #FFFFFF;
+  }
+
+.top-wrapper h1 {
+  font-size: 45px;
+  letter-spacing: 5px;
+  border-radius: 10px;
+  text-shadow: 3px 3px 10px #666666;
+  text-align: left;
+  opacity: 0;
+  }
+.top-wrapper h1:nth-child(1) {
+  -webkit-animation: example 2s ease 0.5s 1 forwards;
+  animation: example 2s ease 0.5s 1 forwards;
+}
+.top-wrapper p {
+  font-size: 16px;
+  margin-bottom: 40px;
+  text-shadow: 1px 2px 3px #666666;
+  text-align: center;
+  }
+}
+@-webkit-keyframes example {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes example {
+  100% {
+    opacity: 1;
+  }
+}
+.btn-wrapper {
+  text-align: center;
+  }
+
+.btn-wrapper p {
+  margin-bottom: 20px;
+  }
+
+
+.facebook {
+  margin-right: 10px;
+  }
+
+
+.btn {
+  padding: 8px 24px;
+  color: #000;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid #000;
+  text-align: center;
+  }
+
+.btn:hover {
+  color: white;
+  background-color: #3a3a3a;
+
+}
+
+.fa {
+  margin-right: 5px;
+  }
+.fab {
+  margin-right: 5px;
+  }
+
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34,49,52,0.9);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+  }
+.logo {
+  width: 124px;
+  margin-top: 10px;
+  }
+
+.header-left {
+  float: left;
+  }
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+  }
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+  }
+
+.header-right a:hover {
+  background-color:rgba(255,255,255,0.3);
+  }
+.activity-wrapper {
+  height: 580px;
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+  }
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: black;
+  }
+
+
+.heading h2 {
+  font-weight: normal;
+
+}
+.under2 {
+  font-size: 30px;
+  color:red;
+  border-bottom: solid 2px black;
+}
+
+
+.activity {
+  float: left;
+  width: 25%;
+  }
+
+.activity-icon {
+  position: relative;
+  }
+
+.activity-icon p {
+  color:white;
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  font-size: 25px;
+
+}
+.bgcolor{
+  background-color:rgba(0, 0, 0, 0.5);
+  border-radius:5px;
+}
+.activity img{
+  height: 180px;
+  border-radius: 10px;
+  width:280px;
+}
+.text-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #b3aeb5;
+  }
+
+.heading h3 {
+  font-weight: normal;
+  }
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+  }
+
+.message {
+  padding: 15px 40px;
+  box-shadow: 0px 7px #D4D2D2;
+　
+  cursor: pointer;
+
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+footer img {
+  width: 125px;
+
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+
+footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  }
+
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
+  }
+
+.clear {
+  clear: left;
+
+}
+
+@media all and (max-width: 1000px) {
+  .activity {
+    width: 50%;
+    margin-bottom: 50px;
+    }
+
+  .activity-wrapper {
+    height: 990px;
+    }
+
+footer {
+  text-align: center;
+  }
+  }
+@media all and (max-width: 750px) {
+  .top-wrapper h1 {
+    font-size: 32px;
+    }
+
+  .heading h2 {
+    font-size: 20px;
+    }
+    }
+
+@media all and (max-width: 670px) {
+  .header-right {
+    display: none;
+    }
+
+  .menu-icon {
+    display: block;
+    }
+
+  .top-wrapper .btn {
+    width: 100%;
+    }
+
+  .twitter {
+    margin-top: 10px;
+      }
+
+  .top-wrapper {
+    text-align: left;
+    }
+
+  .top-wrapper h1 {
+    font-size: 24px;
+    }
+
+  .top-wrapper p {
+    font-size: 14px;
+    }
+  .activity {
+    width: 100%;
+    }
+
+  .activity-wrapper {
+    height: 1700px;
+    }
+
+  .message-wrapper .btn {
+    width: 100%;
+    }
+  }
